@@ -1,0 +1,59 @@
+- Реализовать запуск тестов WDIO + cucumber в Jenkins
+	- по коммиту
+
+1. click new item button;
+2. type item name "WDIO + cucumber job + Jenkins";
+3. click freestyle project;
+4. click "OK" button;
+5. in Source Code Management choose Git;
+6. type repository source "https://github.com/yauhenirusakovich/HW10_WDIO_Cucumber.git";
+7. choose "Add timestamps to the Console Output" in Build Environment;
+8. in Build choose "execute shell";
+9. type "npm install";
+10. click "add build step";
+11. type "npm run wdio";
+12. find "Build environment";
+13. choose "Add timestamps to the Console Output";
+14. in build triggers choose "GitHub hook trigger for GITScm polling";
+15. click apply;
+16. click save;
+
+    - по времени
+
+1. click new item button;
+2. type item name "WDIO + cucumber job + Jenkins";
+3. click freestyle project;
+4. click "OK" button;
+5. in Source Code Management choose Git;
+6. type repository source "https://github.com/yauhenirusakovich/HW10_WDIO_Cucumber.git";
+7. choose "Add timestamps to the Console Output" in Build Environment;
+8. in Build choose "execute shell";
+9. type "npm install";
+10. click "add build step";
+11. type "npm run wdio";
+12. find "Build environment";
+13. choose "Add timestamps to the Console Output";
+14. in build triggers choose "build periodically";
+15. type "H/15****"
+15. click apply;
+16. click save;
+
+- Реализовать запуск тестов Cypress в Jenkins
+
+1. click new item button;
+2. type item name "Cypress + Jenkins";
+3. click freestyle project;
+4. click "OK" button;
+5. in Source Code Management choose Git;
+6. type repository source "https://github.com/yauhenirusakovich/HW12_Cypress.git";
+7. choose "Add timestamps to the Console Output" in Build Environment;
+8. in Build choose "execute shell";
+9. type "npm install";
+10. click "add build step";
+11. type "cypress:run";
+12. find "Build environment";
+13. choose "Add timestamps to the Console Output";
+14. in build triggers choose "build periodically";
+15. type "H/15****"
+15. click apply;
+16. click save;
